@@ -30,39 +30,12 @@ Connect the components as follows:
 ## Code
 Upload the following Arduino sketch to your board:
 
-```cpp
-#include <SoftwareSerial.h>
-
-SoftwareSerial BTSerial(2, 3); // RX, TX
-int ledPin = 13;
-char data;
-
-void setup() {
-    pinMode(ledPin, OUTPUT);
-    BTSerial.begin(9600);
-    Serial.begin(9600);
-}
-
-void loop() {
-    if (BTSerial.available()) {
-        data = BTSerial.read();
-        Serial.println(data);
-
-        if (data == '1') {
-            digitalWrite(ledPin, HIGH);
-        } else if (data == '0') {
-            digitalWrite(ledPin, LOW);
-        }
-    }
-}
-```
 
 ## How It Works
 1. Power on the Arduino and Bluetooth module.
 2. Pair the Bluetooth module with your smartphone.
 3. Open a Bluetooth terminal app and connect to the module.
-4. Send '1' to turn on the LED and '0' to turn it off.
-5. Modify the app to recognize voice commands and send '1' or '0' accordingly.
+4. Send 'light on' to turn on the LED and 'good night' to turn it off.
 
 ## Applications
 - Home Automation
