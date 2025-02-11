@@ -56,3 +56,7 @@ Upload the following Arduino sketch to your board:
 This project is open-source. Feel free to modify and improve it.
 
 For any queries mail at rudranarayansahu.tech@gmail.com
+
+**Name** - Rudranarayan Sahu
+
+**Website** - https://akash0101.pythonanywhere.com
